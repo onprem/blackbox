@@ -48,8 +48,8 @@ const Bio: FC = () => {
         }}
       />
       <p>
-        Personal blog by <a href={`https://twitter.com/${social.twitter}`}>{author}</a>. <br /> Lorem ipsum dolor met; It's
-        me, Dio!
+        Personal blog by <a target="_blank" rel="noreferrer noopener" href={`https://twitter.com/${social.twitter}`}>{author}</a>. <br /> You expected a bio but
+        it was me, Dio!
       </p>
     </div>
   );
