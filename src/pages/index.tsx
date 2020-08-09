@@ -1,7 +1,9 @@
 import React, { FC } from 'react';
+import { PageProps, graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
-import { PageProps, graphql } from 'gatsby';
+import SEO from '../components/SEO';
+import Bio from '../components/Bio';
 
 interface Query {
   site: {
@@ -15,6 +17,8 @@ const Home: FC<PageProps<Query>> = ({ location, data }) => {
   const siteTitle = data.site.siteMetadata.title;
   return (
     <Layout location={location} title={siteTitle}>
+      <SEO title="All posts" />
+      <Bio />
       <h2>Hello World</h2>
     </Layout>
   );
