@@ -29,7 +29,7 @@ const Home: FC<PageProps<Query>> = ({ location, data }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Blackbox | All posts" />
+      <SEO title="All posts" />
       <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug;
