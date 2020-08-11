@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
-import { Link, graphql, PageRendererProps, PageProps } from 'gatsby';
+import { Link, graphql, PageProps } from 'gatsby';
+import Img from "gatsby-image";
 
 import Bio from '../components/Bio';
 import Layout from '../components/Layout';
@@ -16,6 +17,10 @@ const BlogPostTemplate: FC<PageProps<any, any>> = ({ data, pageContext, location
       <SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
       <article>
         <header>
+          <Img
+            alt="header for this blog post"
+            fluid={post.frontmatter.headerImg.childImageSharp.fluid}
+          />
           <h1
             style={{
               marginTop: rhythm(1),
@@ -92,6 +97,14 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        headerImg {
+          childImageSharp {
+            fluid(maxWidth: 600, maxHeight: 600, cropFocus: ENTROPY) {
+              ...GatsbyImageSharpFluid
+              # ...GatsbyImageSharpFluidLimitPresentationSize
+            }
+          }
+        }
       }
     }
   }
