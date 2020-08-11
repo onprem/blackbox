@@ -5,8 +5,24 @@ description: ""
 headerImg: "header.jpg"
 ---
 
-Hello hello, mic test 1-2-3! Oh it's working.
+# Hello, hello
+
+Mic test 1-2-3! Oh it's working.
+
+## Let's start
 
 Hello 👋 my name is Prem. I am currently a GSoC mentee at [Thanos](https://thanos.io) and I am working on porting the old Thanos web UI to React.
+
+```jsx{3-5}
+const App = () => {
+  return (
+    <div>
+      <h1>Hello! lorem ipsum sikjgj sd kjjshd kh dsdk k khd</h1>
+    </div>
+  );
+}
+```
+
+![Lone tree](./wang.jpg)
 
 A few things in which I'm interested in are React, Go, GraphQL, web development, infrastructure and observability so I'd be writing about them. Hope to see you around. :)

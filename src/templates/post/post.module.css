@@ -1,0 +1,61 @@
+.vertical {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  composes: vertical;
+}
+
+.header {
+  composes: vertical;
+  background-color: #a7c2d3;
+  min-height: 100vh;
+}
+
+.headerImg {
+  width: var(--viewWidth);
+  max-width: 35vw;
+}
+
+.article {
+  max-width: var(--viewWidth);
+  box-sizing: border-box;
+  padding: 2em 1em;
+  width: 100%;
+}
+
+.article > section {
+  width: 100%;
+}
+
+/*
+.content {
+  composes: vertical;
+}
+
+.content > p,
+.content > div,
+.content > h1,
+.content > h2,
+.content > h3,
+.compress {
+  width: 100%;
+  max-width: var(--viewWidth);
+}
+
+.compress {
+  width: 100%;
+} */
+
+@media (max-width: 672px) {
+  .header {
+    min-height: unset;
+  }
+
+  .headerImg {
+    max-width: 90vw;
+  }
+}
