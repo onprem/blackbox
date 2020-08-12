@@ -1,0 +1,105 @@
+.vertical {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  composes: vertical;
+}
+
+.header {
+  composes: vertical;
+  background: #e9998b;
+  min-height: 100vh;
+}
+
+.headerImg {
+  width: var(--viewWidth);
+  max-width: 30vw;
+}
+
+.linkBtn {
+  position: relative;
+  background: none;
+  border: solid 1px black;
+  border-radius: 100%;
+  width: 3.5em;
+  height: 3.5em;
+  transition: all 0.1s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+
+.linkBtn:hover {
+  background: black;
+  color: white;
+}
+
+.linkBtn:active {
+  transform: scale(0.8);
+}
+
+.linkBtn:hover::after {
+  position: absolute;
+  left: 110%;
+  top: 50%;
+  width: max-content;
+  transform: translateY(-50%);
+  content: "Copy link";
+  background: white;
+  color: black;
+  padding: 0.3em 1em;
+  border-radius: 0.3em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  /* font-weight: 400; */
+}
+
+.linkBtn:hover:focus::after {
+  content: "Copied!";
+}
+
+.article {
+  max-width: var(--viewWidth);
+  box-sizing: border-box;
+  padding: 2em 1em;
+  width: 100%;
+}
+
+.article > section {
+  width: 100%;
+}
+
+/*
+.content {
+  composes: vertical;
+}
+
+.content > p,
+.content > div,
+.content > h1,
+.content > h2,
+.content > h3,
+.compress {
+  width: 100%;
+  max-width: var(--viewWidth);
+}
+
+.compress {
+  width: 100%;
+} */
+
+@media (max-width: 672px) {
+  .header {
+    min-height: unset;
+  }
+
+  .headerImg {
+    max-width: 90vw;
+  }
+}

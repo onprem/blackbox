@@ -3,9 +3,14 @@ title: Mic test 1-2-3!
 date: "2020-08-10"
 description: ""
 headerImg: "header.jpg"
+accent: "#a7c2d3"
 ---
 
-Hello hello, mic test 1-2-3! Oh it's working.
+## Hello, hello
+
+Mic test 1-2-3! Oh it's working.
+
+## Let's start
 
 Hello 👋 my name is Prem. I am currently a GSoC mentee at [Thanos](https://thanos.io) and I am working on porting the old Thanos web UI to React.
 

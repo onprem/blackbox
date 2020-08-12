@@ -1,0 +1,11 @@
+.nav {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1em 3em;
+}
+
+@media (max-width: 672px) {
+  .nav {
+    padding: 0.7em 15px;
+  }
+}
