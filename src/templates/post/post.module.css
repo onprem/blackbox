@@ -11,13 +11,57 @@
 
 .header {
   composes: vertical;
-  background-color: #a7c2d3;
+  background: #e9998b;
   min-height: 100vh;
 }
 
 .headerImg {
   width: var(--viewWidth);
-  max-width: 35vw;
+  max-width: 30vw;
+}
+
+.linkBtn {
+  position: relative;
+  background: none;
+  border: solid 1px black;
+  border-radius: 100%;
+  width: 3.5em;
+  height: 3.5em;
+  transition: all 0.1s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+
+.linkBtn:hover {
+  background: black;
+  color: white;
+}
+
+.linkBtn:active {
+  transform: scale(0.8);
+}
+
+.linkBtn:hover::after {
+  position: absolute;
+  left: 110%;
+  top: 50%;
+  width: max-content;
+  transform: translateY(-50%);
+  content: "Copy link";
+  background: white;
+  color: black;
+  padding: 0.3em 1em;
+  border-radius: 0.3em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  /* font-weight: 400; */
+}
+
+.linkBtn:hover:focus::after {
+  content: "Copied!";
 }
 
 .article {

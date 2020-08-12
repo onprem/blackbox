@@ -30,6 +30,14 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /content\/assets/,
+        },
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -37,7 +45,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1000,
-              wrapperStyle: `width: var(--imageWidth); transform: translateX(var(--imageTranslate))`
+              wrapperStyle: `width: var(--imageWidth); transform: translateX(var(--imageTranslate))`,
             },
           },
           {

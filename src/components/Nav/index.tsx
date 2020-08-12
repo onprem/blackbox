@@ -10,9 +10,10 @@ export interface NavProps {
 
 const Nav: FC<PageRendererProps & NavProps> = ({ location, title }) => {
   const rootPath = withPrefix('/');
+  const atHome = location.pathname === rootPath
 
   const homeLink =
-    location.pathname === rootPath ? (
+    atHome ? (
       <h1 style={{ ...scale(1.5), marginBottom: rhythm(1.5), marginTop: 0 }}>
         <Link style={{ boxShadow: `none`, color: `inherit` }} to={`/`}>
           {title}
@@ -26,7 +27,7 @@ const Nav: FC<PageRendererProps & NavProps> = ({ location, title }) => {
       </h3>
     );
 
-  return <nav className={styles.nav}>{homeLink}</nav>;
+  return <nav className={!atHome && styles.nav}>{homeLink}</nav>;
 };
 
 export default Nav;
