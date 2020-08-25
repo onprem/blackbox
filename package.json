@@ -39,7 +39,7 @@
     "react-helmet": "^6.1.0",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19",
-    "typography-theme-kirkham": "^0.16.19"
+    "typography-theme-parnassus": "^0.16.19"
   },
   "devDependencies": {
     "@types/node": "^14.0.27",

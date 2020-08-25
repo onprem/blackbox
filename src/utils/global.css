@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: #f9f9f9;
 }
 
 @media (max-width: 672px) {

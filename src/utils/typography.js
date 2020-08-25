@@ -1,9 +1,9 @@
 import './global.css';
 
 import Typography from 'typography';
-import Kirkham from 'typography-theme-kirkham';
+import TypoTheme from 'typography-theme-parnassus';
 
-const typography = new Typography(Kirkham);
+const typography = new Typography(TypoTheme);
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== 'production') {

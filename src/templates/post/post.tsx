@@ -25,7 +25,7 @@ const BlogPostTemplate: FC<PageProps<any, any>> = ({ data, pageContext, location
           alt="header for this blog post"
           fluid={post.frontmatter.headerImg.childImageSharp.fluid}
         />
-        <h1 style={{ ...scale(1.2), marginTop: rhythm(1), marginBottom: 0 }}>{post.frontmatter.title}</h1>
+        <h1 style={{ ...scale(1.2), marginTop: rhythm(1), marginBottom: 0, textAlign: "center" }}>{post.frontmatter.title}</h1>
         <p style={{ display: `block`, marginTop: rhythm(1), marginBottom: rhythm(1) }}>{post.frontmatter.date}</p>
         <button className={styles.linkBtn} onClick={() => navigator.clipboard.writeText(location.href)}>
           <LinkIcon height={rhythm(1)} />

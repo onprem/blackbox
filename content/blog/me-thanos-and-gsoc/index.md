@@ -18,6 +18,8 @@ I have always been interested in things like hosting websites, running a mail se
 
 # Enter, Thanos!
 
+![Thanos figurine](thanos.jpg)
+
 [Thanos](https://thanos.io) describes itself as _"Open source, highly available Prometheus setup with long term storage capabilities."_
 
 ### Now the question is, what is Prometheus?
