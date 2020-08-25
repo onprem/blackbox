@@ -27,7 +27,7 @@ const Nav: FC<PageRendererProps & NavProps> = ({ location, title }) => {
       </h3>
     );
 
-  return <nav className={!atHome && styles.nav}>{homeLink}</nav>;
+  return <nav className={!atHome ? styles.nav : undefined}>{homeLink}</nav>;
 };
 
 export default Nav;

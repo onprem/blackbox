@@ -9,7 +9,7 @@ module.exports = {
     title: 'BlackBox',
     author: 'Prem Saraswat',
     description: 'Personal blog by Prem Saraswat.',
-    siteUrl: 'https://prem.codes',
+    siteUrl: 'https://blog.onprem.dev',
     social: {
       twitter: '@prmsrswt',
     },
