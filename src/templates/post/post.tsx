@@ -89,7 +89,7 @@ export const pageQuery = graphql`
         accent
         headerImg {
           childImageSharp {
-            fluid(maxWidth: 600, maxHeight: 600, cropFocus: ENTROPY) {
+            fluid(maxWidth: 1000, maxHeight: 1000, cropFocus: ENTROPY) {
               ...GatsbyImageSharpFluid
               # ...GatsbyImageSharpFluidLimitPresentationSize
             }
