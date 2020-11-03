@@ -84,5 +84,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-plugin-umami`,
+      options: {
+        websiteId: '16013126-dbb7-40d6-b603-0fd8738b327d',
+        srcUrl: 'https://analytics.onprem.dev/umami.js',
+        includeInDevelopment: false,
+        autoTrack: true,
+        respectDoNotTrack: true
+      },
+    },
   ],
 };
